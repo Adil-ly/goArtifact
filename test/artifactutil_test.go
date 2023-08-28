@@ -1,7 +1,7 @@
 package test
 
 import (
-	"github.com/Adil-ly/goArtifact.git"
+	"github.com/Adil-ly/goArtifact"
 	"testing"
 )
 
