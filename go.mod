@@ -1,3 +1,3 @@
 module github.com/Adil-ly/goArtifact
 
-go 1.19
+go 1.22
