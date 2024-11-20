@@ -17,6 +17,9 @@ artifactutil.IsInSlice(x int,y []int)
 // Slice and remove duplicates
 artifactutil.ReDup(x []int) 
 
+// Retrieve all values of the map
+artifactutil.GetMapValue(m map[string]any)
+artifactutil.GetMapValueDup(m map[string]any) //not repeat
 -------
 
 ...Subsequent tool development and use

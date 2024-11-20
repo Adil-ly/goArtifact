@@ -39,3 +39,25 @@ func ReDup[T comparable](slice []T) []T {
 		return v
 	})
 }
+
+// getMapValue Retrieve all values of the map
+func getMapValue[E, T comparable](m map[E]T, fn func(v T) T) []T {
+	res := make([]T, 0, len(m))
+	for _, v := range m {
+		va := fn(v)
+		res = append(res, va)
+	}
+	return res
+}
+
+// GetMapValue Retrieve all values of the map
+func GetMapValue[E, T comparable](m map[E]T) []T {
+	return getMapValue(m, func(v T) T {
+		return v
+	})
+}
+
+// GetMapValueDup Retrieve all values of the map And not repeat
+func GetMapValueDup[E, T comparable](m map[E]T) []T {
+	return ReDup(GetMapValue(m))
+}

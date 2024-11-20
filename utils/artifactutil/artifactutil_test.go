@@ -61,3 +61,14 @@ func TestArtifactUtilReDup(t *testing.T) {
 	resWithUint64 := ReDup(dataUint64Slice)
 	t.Logf("uint64结果：%v", resWithUint64)
 }
+
+func TestArtifactGetMapValue(t *testing.T) {
+	dataMap := map[string]any{
+		"2": 1,
+		"3": 2,
+		"4": 1,
+	}
+
+	t.Logf("map结果：%v", GetMapValue(dataMap))
+	t.Logf("map结果：%v", GetMapValueDup(dataMap))
+}
