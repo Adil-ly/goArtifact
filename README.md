@@ -2,7 +2,7 @@
 
 ##### Install expansion pack command
 
-`go get -u github.com/Adil-ly/goArtifact@latest`
+`go get -u github.com/adil-ly/go-artifact@latest`
 
 ##### How Use
 
